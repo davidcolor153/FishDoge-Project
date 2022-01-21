@@ -1,0 +1,431 @@
+/* global settings */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Russo+One&display=swap');
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+* {
+    font-family: 'Orbitron', 'Russo One',sans-serif;
+    text-align: center;
+    position: relative;
+    /* border: solid 1px black; */
+}
+
+/* general settings */
+h1 {
+    font-family: Russo One;
+    font-size: 72px;
+}
+h2 {
+    font-family: Orbitron;
+    font-size: 36px;    
+}
+h3 {
+    font-family: Orbitron;
+    font-size: 24px;    
+}
+p {
+    font-family: Orbitron;
+    font-size: 18px;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+    margin: 0px 10px;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+}
+a:active {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+section {
+    width: 100%;
+}
+.container{
+    display: inline-block;
+    padding: 100px 0px;
+    width: 100%;
+}
+button {
+    cursor: pointer;
+}
+
+/* banner settings */
+#banner {
+    background-color: #171717;
+    color: white;
+    display: inline-block;
+    /* min-height: 100vh; */
+}
+/* #banner .container{
+    vertical-align: middle;
+} */
+#banner .pic{
+    display: inline-block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 290px;
+}
+#banner .pic img{
+    width: 100%;
+    height: 100%;
+}
+#banner h1{
+    letter-spacing: 0.09em;
+    margin-bottom: 150px;
+}
+#banner a {
+    color: white;
+}
+
+/* slogan */
+#slogan {
+    background-color: black;
+    color: white;
+}
+#slogan span{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* usage */
+#usage {
+    background-color: white;
+    color: black;
+}
+#usage p{
+    font-weight:bold;
+}
+#usage span{
+    font-size: 18px;
+}
+#usage h2{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* WhitePaper  */
+#whitepaper {
+    background-color: black;
+    color: white;
+}
+#whitepaper h2{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* RoadMap */
+#roadmap {
+    background-color: red;
+    color: white;
+}
+#roadmap h2{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* team */
+#team {
+    background-color: white;
+    color: black;
+}
+#team .block{
+    display: inline-block;
+    width: 300px;
+    vertical-align: text-top;
+    padding-bottom: 50px;
+}
+#team .pic img{
+    width: 150px;
+    height: 150px;
+    background-color: #c4c4c4;
+    border-radius: 100%;
+}
+#team h2{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+#team .block h2{
+    font-family: Russo One;
+    margin-bottom: 0px;
+}
+#team h3{
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+#team p{
+    height: 100px;
+}
+#team .icon img{
+    width: 24px;
+    height: 24px;
+    background-color: #c4c4c4;
+    border-radius: 100%;
+}
+
+/* swap */
+#swap {
+    background-color: black;
+    color: white;
+}
+#swap button{
+    border: none;
+}
+#swap .container{
+    width: 100%;
+    display: inline-block;
+}
+#swap .heading-block{
+    width: 80%;
+    max-width: 600px;
+    display: inline-block;
+}
+#swap .heading-block h2{
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+#swap .heading-block button{
+    line-height: 36px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    color: white;
+}
+#swap .swap-block{
+    border: solid 1px white;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 60px;
+    padding-bottom: 10px;
+}
+#swap .swap-block .field {
+    background-color: #2d2d2d;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    height: 90px;
+
+}
+#swap .swap-block .field input {
+    background-color: transparent;
+    color: white;
+    text-align: left;
+    text-shadow: none;
+    border: none;
+    line-height: 70px; /* p18+margin10*2 */
+    height: 70;
+    position: absolute;
+    left: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    outline:none;
+}
+#swap .swap-block .field button{
+    font-weight: bold;
+    height: 70px;
+    width: 120px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+
+}
+#swap .btn-block button{
+    background-color: #c4c4c4;
+    color: white;
+    padding: 10px 30px;
+    margin: 30px 30px;
+}
+
+/* nft */
+#nft {
+    background-color: #171717;
+    color: white;
+}
+#nft button{
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+#nft .container{
+    width: 100%;
+    display: inline-block;
+}
+#nft .heading-block{
+    width: 80%;
+    max-width: 600px;
+    display: inline-block;
+}
+#nft .heading-block h2{
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+#nft .heading-block button{
+    line-height: 36px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    color: white;
+}
+#nft .blocks{    
+    display: block;
+}
+#nft .pic{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    vertical-align: middle;
+    margin: 30px;
+}
+#nft img{
+    width: 100%;
+    height: 100%;
+}
+#nft .blocks .block{
+    display: inline-block;
+    border: solid 1px white;
+    /* height: 300px; */
+    padding: 40px 20px;
+    vertical-align: middle;
+}
+#nft .mint-btn{
+    background-color: #c4c4c4;
+    color: white;
+}
+#nft input{
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    margin: 0px 10px;
+    color: white;
+}
+#nft .block{
+    color: #c4c4c4;
+}
+#nft span{
+    color: white;
+}
+
+/* footer */
+#footer .container{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+}
+#home-btn{
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #c4c4c4;
+    color: black;
+}
+#home-btn a{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+#home-btn a img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1440px) {     
+    #home-btn{
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    h1 {
+        font-size: 36px;
+
+    }
+    h2  {
+        font-size: 21px;
+    }
+    h3  {
+        font-size: 18px;
+    }
+    p  {
+        font-size: 14px;
+    }
+    #banner .address{
+        display: inline-block;
+        margin: 0px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    #banner .address a{
+        margin: 0px;
+        width: 100%;
+    }
+    #usage span{
+        font-size: 14px;
+    }
+    #team .icon img{
+        width: 36px;
+        height: 36px;
+        background-color: #c4c4c4;
+        border-radius: 100%;
+    }
+    #swap .heading-block button{
+        bottom: 20px;
+        margin: 0px;
+        width: 100%;
+        left: 0;
+    }
+    #nft .heading-block button{
+        bottom: 20px;
+        margin: 0px;
+        width: 100%;
+        left: 0;
+    }
+    #swap .swap-block{
+        padding: 30px 20px;
+    }
+    #home-btn{
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+    }
+}
