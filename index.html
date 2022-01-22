@@ -18,7 +18,7 @@
                 <a href="#swap"><h2>SWAP</h2></a>
                 <a href="#nft"><h2>NFT</h2></a>
             </div>
-            <p class="address"><a href="">BSC : 0x361d8552d7db423ec0cb097a5911fe453d205374</a></p>
+            <p class="address"><a href="https://bscscan.com/address/0x361d8552d7db423ec0cb097a5911fe453d205374">BSC : 0x361d8552d7db423ec0cb097a5911fe453d205374</a></p>
         </div>
     </section>
     <section id ="slogan">
@@ -150,21 +150,26 @@
                 <div class="pic"><img src="assets/fishdoge_logo.png" alt=""></div>
                 <div class="block">
                     <div class="number">
-                        <p>剩餘數量 <span>0</span> /10000 </p>
+                        <p>剩餘數量 <span>9527</span> /10000 </p>
                     </div>
                     <div class="amount">
                         <span>購買數量</span>
-                        <button>-</button>
-                        <input type="text"placeholder="0">
-                        <button>+</button>
-                        <button>MAX</button>
+                        <button onclick="btnReduce()">-</button>
+                        <input id="num" value="0" type="text"placeholder="0">
+                        <button onclick="btnAdd()">+</button>
+                        <button onclick="btnMax()">MAX</button>
                     </div>
                     <div class="total">
-                        <p>總價  <span>0.08</span>  ETH</p>
+                        <p>總價  <span id="totalNum">0.00</span>  ETH</p>
                     </div>
                     <button class="mint-btn">MINT</button>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id ="footer">
+        <div class="container">
+            <p>Project, Smart Contract by Arron Yan. Web design by DavidColor , Patrick Yan.</p>
         </div>
     </section>
     <div id="home-btn">
@@ -172,11 +177,6 @@
             <img src="assets/arrow_up.svg" alt="">
         </a>
     </div>
-    <section id ="footer">
-        <div class="container">
-            <p>Project, Smart Contract by Arron Yan. Web design by DavidColor , Patrick Yan.</p>
-        </div>
-    </section>
-
+    <script  type="text/javascript" src="js/counter.js"></script>
 </body>
 </html>
